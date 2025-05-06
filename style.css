@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', monospace;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+.home{
+    height: 100vh;
+    padding-top: 20px;
+    background: linear-gradient(to bottom, #ffbd87, #ffad43, #ff960e);
+}
+
+.navbar{
+    background-color: #313131;
+    padding: 15px 50px;
+    border-radius: 40px;
+    /* width: fit-content; */
+    margin:auto;
+    border: 3px solid #ffffff;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li{
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #ffa500;
+    transition: color .3s ease;
+}
+
+.navbar li:nth-child(1){
+    animation: slideLeft .5s ease forwards;
+    opacity: 1;
+}
+
+.navbar li:nth-child(2){
+    animation: slideLeft 1s ease forwards;
+    opacity: 1;
+}
+
+.navbar li:nth-child(3){
+    animation: slideLeft 1.5s ease forwards;
+    opacity: 1;
+}
+
+.navbar li:nth-child(5){
+    animation: slideRight 1.5s ease forwards;
+    opacity: 1;
+}
+
+.navbar li:nth-child(6){
+    animation: slideRight 1s ease forwards;
+    opacity: 1;
+}
+
+.navbar li:nth-child(7){
+    animation: slideRight .5s ease forwards;
+    opacity: 1;
+}
+
+.navbar li a:hover{
+    color: #ffcc00;
+}
+
+.navbar .logo{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.hero{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.content{
+    max-width: 600px;
+}
+
+.profile-img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+.hero .content h1{
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom:15px ;
+    margin-top: 20px;
+}
+
+.hero .content h1 span{
+    color: #000000;
+}
+
+.hero .content h2 span{
+    color: #000000;
+}
+
+.hero .content p{
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.hero .content .btn{
+    text-decoration: none;
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 40px;
+    font-weight: 800;
+}
+
+.home .exp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.home .exp .left {
+    margin-left: 35%;
+}
+
+.home .exp .left .stars{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.home .exp .left .stars ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+.stars ul li{
+    font-size: 2rem;
+    color: #ffd700;
+    margin: 0 5px;
+}
+
+.stars ul li:nth-child(5){
+    color: #808080;
+}
+
+.stars .text{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.home .exp .right{
+    margin-right: 35%;
+}
+
+.home .exp .right .neumorph-btn-container{
+    position: relative;
+}
+
+.right .neumorph-btn-container .neumorph-btn{
+    background: #e0e5ec;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 7px 7px 15px #ffffff;
+    padding: 15px 30px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.neumorph-btn-container .neumorph-btn .arrow{
+    top: -10px;
+    right: -10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #4a4a4a;
+    transition: color .3s ease;
+}
+
+.neumorph-btn:hover{
+    box-shadow: 3px 3px 10px #a3b1c6,
+    -3px -3px 10px #fff;
+}
+
+.neumorph-btn:hover .arrow{
+    color: #ff6347;
+}
+
+@keyframes slideLeft{
+    from{
+        transform: translateX(-500%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideRight{
+    from{
+        transform: translateX(500%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideDown{
+    from{
+        transform: translateY();
+    }
+    to{
+        transform: translateY();
+    }
+}
+
+@keyframes slideUp{
+    from{
+        transform: translateY();
+    }
+    to{
+        transform: translateY();
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 320px){
+    body{
+        padding: 0;
+    }
+
+    .header{
+        padding: 2px 5px;
+    }
+
+    .header .navbar{
+        border: 1px solid #fff;
+    }
+
+    .header .navbar ul{
+        gap: 8px;
+    }
+
+    .header .navbar li a{
+        font-size: 9px;
+    }
+
+    .navbar ul .logo{
+        font-size: 15px;
+    }
+
+    .home{
+       height: auto;
+    }
+
+    .home .exp .left{
+        margin-left: 10%;
+    }
+
+    .home .exp .left .stars ul li{
+        font-size: 14px;
+    }
+
+    .home .exp .left .stars .text{
+        font-size: 12px;
+    }
+
+    .home .exp .right{
+        margin-right: 10%;
+    }
+
+    .right .neumorph-btn-container .neumorph-btn{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    
+    .neumorph-btn-container .neumorph-btn .arrow{
+        font-size: 12px;
+    }
+}
+
+

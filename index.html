@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section class="home">
+        <section class="header">
+            <header>
+                <nav class="navbar">
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Services</a>
+                        </li>
+                        <li class="logo">Portfolio</li>
+                        <li>
+                            <a href="">Steyp</a>
+                        </li>
+                        <li>
+                            <a href="">Projects</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+
+        <section class="hero">
+            <div class="content">
+                <img src="images/profile.jpg" alt="Profile" class="profile-img">
+                <h1>Hi, I'm <span>Steve Samji</span></h1>
+                <h2>I'm a <span class="text"></span></h2>
+                <p>I build clean, responsive websites with passion and precision.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <section class="exp">
+            <div class="left">
+                <div class="stars">
+                    <ul>
+                        <li>&#9733</li>
+                        <li>&#9733</li>
+                        <li>&#9733</li>
+                        <li>&#9733</li>
+                        <li>&#9733</li>
+                    </ul>
+                    <h6 class="text">1 year experience</h6>
+                </div>
+            </div>
+            <div class="right">
+                <div class="neumorph-btn-container">
+                    <button class="neumorph-btn">
+                        Contact
+                        <span class="arrow">&#8599;</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script>
+        var typed = new Typed('.text', {
+          strings: ['Frontend Dev', 'Youtuber', 'Cuber'],
+          typeSpeed: 100,
+          backSpeed:100,
+          backDelay:1000,
+          loop:true
+        });
+    </script>
+</body>
+
+</html>
