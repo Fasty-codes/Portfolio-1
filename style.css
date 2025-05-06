@@ -270,6 +270,61 @@ body{
     }
 }
 
+@media (max-width: 420px){
+    body{
+        padding: 0;
+    }
+
+    .header{
+        padding: 2px 5px;
+    }
+
+    .header .navbar{
+        border: 1px solid #fff;
+    }
+
+    .header .navbar ul{
+        gap: 8px;
+    }
+
+    .header .navbar li a{
+        font-size: 9px;
+    }
+
+    .navbar ul .logo{
+        font-size: 15px;
+    }
+
+    .home{
+       height: auto;
+    }
+
+    .home .exp .left{
+        margin-left: 10%;
+    }
+
+    .home .exp .left .stars ul li{
+        font-size: 14px;
+    }
+
+    .home .exp .left .stars .text{
+        font-size: 12px;
+    }
+
+    .home .exp .right{
+        margin-right: 10%;
+    }
+
+    .right .neumorph-btn-container .neumorph-btn{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    
+    .neumorph-btn-container .neumorph-btn .arrow{
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 320px){
     body{
         padding: 0;
