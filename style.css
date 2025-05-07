@@ -25,7 +25,6 @@ body{
     background-color: #313131;
     padding: 15px 50px;
     border-radius: 40px;
-    /* width: fit-content; */
     margin:auto;
     border: 3px solid #ffffff;
 }
@@ -90,6 +89,7 @@ body{
     color: #ffffff;
     font-weight: 600;
     font-size: 30px;
+    animation: slideDown 1s ease forwards;
 }
 
 .hero{
@@ -122,10 +122,15 @@ body{
     color: #ffffff;
     margin-bottom:15px ;
     margin-top: 20px;
+    animation: slideRight 1s ease forwards;
 }
 
 .hero .content h1 span{
     color: #000000;
+}
+
+.hero .content h2{
+    animation: slideLeft 1s ease forwards;
 }
 
 .hero .content h2 span{
@@ -137,6 +142,7 @@ body{
     margin-bottom: 30px;
     margin-top: 20px;
     font-weight: 300;
+    animation: slideRight 1s ease forwards;
 }
 
 .hero .content .btn{
@@ -157,6 +163,7 @@ body{
 
 .home .exp .left {
     margin-left: 35%;
+    animation: slideUp 1s ease forwards;
 }
 
 .home .exp .left .stars{
@@ -189,6 +196,7 @@ body{
 
 .home .exp .right{
     margin-right: 35%;
+    animation: slideUp 1s ease forwards;
 }
 
 .home .exp .right .neumorph-btn-container{
@@ -225,9 +233,180 @@ body{
     color: #ff6347;
 }
 
+.about{
+    background: url('https://images.pexels.com/photos/2255349/pexels-photo-2255349.jpeg?auto=compress&cs=tinysrgb&w=600');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-text{
+    flex: 1;
+    min-width: 300px;
+    animation: fadeSlideLeft 1s ease-out forwards;
+}
+
+.about .title{
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.about .title span{
+    color: #0909ff;
+}
+
+.about .desc{
+    color: #fff;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.about-image{
+    flex: 1;
+    min-width: 300px;
+    animation: fadeSlideRight 1s ease-out forwards;
+}
+
+.about-image img{
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    height: auto;
+}
+
+.about-image img:hover{
+    border-radius: 20px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.steyp-exp{
+    background: url('images/background.webp') no-repeat center ;
+    height: 100vh;
+    background-size: cover;
+}
+
+.steyp-exp h1{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.steyp-exp h1 span{
+    color: #adff2f;
+}
+
+.timeline-section{
+    min-height: 100vh;
+    padding: 100px 15px;
+}
+
+.timeline-items{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: white;
+    left: calc(50% - 1px);
+}
+
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-items:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: center;
+}
+
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot{
+    height: 21px;
+    width: 21px;
+    background-color: #ef34d9;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 50px;
+}
+
+.timeline-date{
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    margin: 6px 0 15px;
+}
+
+.timeline-content{
+    background-color: rgba(190, 190, 190, 0.25);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(224, 224, 224, 0.25);
+    padding: 30px;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.timeline-content:hover{
+    transform: scale(1.05);
+}
+
+.timeline-content h3{
+    font-size: 20px;
+    color: #fff;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.timeline-content p{
+    color: #fff;
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
 @keyframes slideLeft{
     from{
-        transform: translateX(-500%);
+        transform: translateX(100%);
     }
     to{
         transform: translateX(0%);
@@ -236,7 +415,7 @@ body{
 
 @keyframes slideRight{
     from{
-        transform: translateX(500%);
+        transform: translateX(-100%);
     }
     to{
         transform: translateX(0%);
@@ -245,19 +424,19 @@ body{
 
 @keyframes slideDown{
     from{
-        transform: translateY();
+        transform: translateY(-100%);
     }
     to{
-        transform: translateY();
+        transform: translateY(0);
     }
 }
 
 @keyframes slideUp{
     from{
-        transform: translateY();
+        transform: translateY(100%);
     }
     to{
-        transform: translateY();
+        transform: translateY(0);
     }
 }
 
@@ -267,6 +446,28 @@ body{
     }
     to{
         opacity: 1;
+    }
+}
+
+@keyframes fadeSlideLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeSlideRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -322,6 +523,36 @@ body{
     
     .neumorph-btn-container .neumorph-btn .arrow{
         font-size: 12px;
+    }
+
+    .about{
+        height: auto;
+    }
+    
+    .about-image{
+        padding-left: 20px;
+    }
+
+    .steyp-exp{
+        height: auto;
+    }
+
+    .timeline-items::before{
+        left: 7px;
+    }
+
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+
+    .timeline-dot{
+        left: 0;
     }
 }
 
@@ -432,6 +663,10 @@ body{
     
     .neumorph-btn-container .neumorph-btn .arrow{
         font-size: 12px;
+    }
+
+    .about{
+        height: auto;
     }
 }
 

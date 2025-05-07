@@ -10,16 +10,16 @@
 </head>
 
 <body>
-    <section class="home">
+    <section class="home" id="home">
         <section class="header">
             <header>
                 <nav class="navbar">
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="">About</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
                             <a href="">Services</a>
@@ -73,13 +73,71 @@
         </section>
     </section>
 
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1 class="title">About <span>Me</span></h1>
+            <p class="desc">I'm Steve Samji, I have learned coding from Steyp. Steyp was introduced to me by my school.
+                I was joined the "tech@school" program,
+                I have completed full course in one year. I am mostly skilled in Frontend Development. I did many
+                projects with only Frontend. Now I
+                am working with the final react native projects. I am also working for my school website.</p>
+        </div>
+        <div class="about-image">
+            <img src="images/profile.jpg" alt="Profile">
+        </div>
+    </section>
+
+    <section class="steyp-exp">
+        <h1>My <span>Steyp Journey</span></h1>
+
+        <div class="timeline-section">
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">June, 2024</div>
+                    <div class="timeline-content">
+                        <h3>Timeline Content 1</h3>
+                        I started learning coding from Steyp in June, 2024.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">August, 2024</div>
+                    <div class="timeline-content">
+                        <h3>Timeline Content 2</h3>
+                        I had completed Frontend and started backend in August, 2024.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">October, 2024</div>
+                    <div class="timeline-content">
+                        <h3>Timeline Content 3</h3>
+                        I completed Web App Development and Devops Engineer in October, 2024.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">November, 2024</div>
+                    <div class="timeline-content">
+                        <h3>Timeline Content 4</h3>
+                        I started learning Mobile App Development and finished on nov 24, 2024.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
         var typed = new Typed('.text', {
-          strings: ['Frontend Dev', 'Youtuber', 'Cuber'],
-          typeSpeed: 100,
-          backSpeed:100,
-          backDelay:1000,
-          loop:true
+            strings: ['Frontend Dev', 'Youtuber', 'Cuber'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
         });
     </script>
 </body>
